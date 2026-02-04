@@ -1,1 +1,2 @@
 # GastoCompartido
+Mi idea surge de la necesidad de ahorrar con mi pareja y recortar gastos lo máximo posible y monitorear los gastos de ambos. Tanto como si ella un día compra algo, elige la categoría ya sea comida o higiene, monto, nombre del producto y método de pago, le da a guardar y eso se sumaria a la lista, luego yo entro y me debería aparecer el gasto perteneciente a ella, yo agregaría equis gasto y a ella debería figurarle y abajo un monto total que se va sumando automáticamente
