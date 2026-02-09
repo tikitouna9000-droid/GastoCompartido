@@ -1,11 +1,8 @@
 package com.gastos.entities;
-
+import com.gastos.Enum.TipoPago;
 import jakarta.persistence.*;
 import lombok.Getter;
-import lombok.Locked;
 import lombok.Setter;
-import org.springframework.cglib.core.Local;
-
 import java.time.LocalDate;
 import java.util.List;
 
@@ -24,7 +21,7 @@ public class Gasto {
 
     private String categoria;
 
-    private enum tipoPago;
+    private TipoPago tipoPago;
 
     private LocalDate fechaCreacion;
 
