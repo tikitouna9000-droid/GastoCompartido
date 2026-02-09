@@ -1,15 +1,13 @@
 package com.gastos.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Locked;
 import lombok.Setter;
 import org.springframework.cglib.core.Local;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -33,4 +31,7 @@ public class Gasto {
     private LocalDate fechaModif;
 
     private String autor;
+
+    @OneToMany(mappedBy = "gasto")
+    private List<RegistroGasto> registroGastoList;
 }

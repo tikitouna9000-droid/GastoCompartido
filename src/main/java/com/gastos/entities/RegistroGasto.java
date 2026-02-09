@@ -1,9 +1,6 @@
 package com.gastos.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,9 +16,11 @@ public class RegistroGasto {
     @GeneratedValue
     private Long id;
 
-    private (aca va usuario);
+    @ManyToOne
+    private Usuario usuario;
 
-    private (aca va gasto);
+    @ManyToOne
+    private Gasto gasto;
 
     private int montoAsignado;
 
